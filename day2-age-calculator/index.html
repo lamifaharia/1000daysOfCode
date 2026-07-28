@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website Title -->
+    <title>Age Calculator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Main Card -->
+    <div class="container">
+
+        <!-- Heading -->
+        <h1>Age Calculator</h1>
+
+        <!-- Small Description -->
+        <p class="subtitle">
+            Enter your birth date to calculate your exact age.
+        </p>
+
+        <!-- Date Input -->
+        <div class="input-group">
+
+            <label for="birthDate">
+                Date of Birth
+            </label>
+
+            <input
+                type="date"
+                id="birthDate"
+            >
+
+        </div>
+
+        <!-- Button -->
+        <button id="calculateBtn">
+            Calculate Age
+        </button>
+
+        <!-- Result -->
+        <div class="result">
+
+            <h2>Your Age</h2>
+
+            <div class="age-box">
+
+                <div class="card">
+                    <span id="years">0</span>
+                    <small>Years</small>
+                </div>
+
+                <div class="card">
+                    <span id="months">0</span>
+                    <small>Months</small>
+                </div>
+
+                <div class="card">
+                    <span id="days">0</span>
+                    <small>Days</small>
+                </div>
+
+            </div>
+
+            <!-- Extra Information -->
+
+            <div class="extra-info">
+
+                <p id="totalDays">
+                    Total Days: --
+                </p>
+
+                <p id="nextBirthday">
+                    Days Until Next Birthday: --
+                </p>
+
+                <p id="weekday">
+                    Born On: --
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
