@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tip Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>💰 Tip Calculator</h1>
+
+        <p class="subtitle">
+            Calculate your tip and split the bill easily.
+        </p>
+
+        <!-- Bill Amount -->
+        <div class="input-group">
+
+            <label for="billAmount">
+                Bill Amount
+            </label>
+
+            <input
+                type="number"
+                id="billAmount"
+                placeholder="Enter bill amount"
+            >
+
+        </div>
+
+        <!-- Tip Percentage -->
+        <div class="input-group">
+
+            <label for="tipPercentage">
+                Tip Percentage
+            </label>
+
+            <input
+                type="number"
+                id="tipPercentage"
+                placeholder="Enter tip %"
+            >
+
+        </div>
+
+        <!-- Number of People -->
+        <div class="input-group">
+
+            <label for="people">
+                Number of People
+            </label>
+
+            <input
+                type="number"
+                id="people"
+                placeholder="Enter number of people"
+            >
+
+        </div>
+
+        <!-- Button -->
+        <button id="calculateBtn">
+            Calculate
+        </button>
+
+        <!-- Result Section -->
+        <div class="result">
+
+            <h2>Results</h2>
+
+            <div class="result-card">
+
+                <p>Tip Amount</p>
+
+                <span id="tipAmount">$0.00</span>
+
+            </div>
+
+            <div class="result-card">
+
+                <p>Total Bill</p>
+
+                <span id="totalBill">$0.00</span>
+
+            </div>
+
+            <div class="result-card">
+
+                <p>Per Person</p>
+
+                <span id="perPerson">$0.00</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
