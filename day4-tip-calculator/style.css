@@ -1,0 +1,223 @@
+/* ===========================
+   Reset
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   Body
+=========================== */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(135deg, #10b981, #059669);
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+}
+
+/* ===========================
+   Container
+=========================== */
+
+.container {
+
+    width: 100%;
+
+    max-width: 450px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+h1 {
+
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    color: #111827;
+
+}
+
+.subtitle {
+
+    text-align: center;
+
+    color: gray;
+
+    margin-bottom: 30px;
+
+}
+
+/* ===========================
+   Inputs
+=========================== */
+
+.input-group {
+
+    margin-bottom: 20px;
+
+}
+
+label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+}
+
+input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    font-size: 16px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    transition: .3s;
+
+}
+
+input:focus {
+
+    border-color: #10b981;
+
+    box-shadow: 0 0 5px rgba(16,185,129,.4);
+
+}
+
+/* ===========================
+   Button
+=========================== */
+
+button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #10b981;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+button:hover {
+
+    background: #059669;
+
+}
+
+/* ===========================
+   Result
+=========================== */
+
+.result {
+
+    margin-top: 30px;
+
+}
+
+.result h2 {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}
+
+.result-card {
+
+    background: #ecfdf5;
+
+    border-left: 5px solid #10b981;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+
+}
+
+.result-card p {
+
+    color: #6b7280;
+
+    margin-bottom: 5px;
+
+}
+
+.result-card span {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #059669;
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 500px) {
+
+    .container {
+
+        padding: 25px;
+
+    }
+
+    h1 {
+
+        font-size: 28px;
+
+    }
+
+}
