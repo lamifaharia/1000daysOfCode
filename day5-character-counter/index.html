@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Character Counter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>✍️ Character Counter</h1>
+
+        <p class="subtitle">
+            Start typing to see your character count in real time.
+        </p>
+
+        <!-- Textarea -->
+        <textarea
+            id="textInput"
+            placeholder="Write something here..."
+            maxlength="200"
+        ></textarea>
+
+        <!-- Counter Section -->
+        <div class="counter">
+
+            <div class="counter-item">
+
+                <span>Characters</span>
+
+                <strong id="characterCount">0 / 200</strong>
+
+            </div>
+
+            <div class="counter-item">
+
+                <span>Remaining</span>
+
+                <strong id="remainingCount">200</strong>
+
+            </div>
+
+        </div>
+
+        <!-- Status -->
+        <div class="status">
+
+            <p id="statusMessage">
+                ✅ You can still write...
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
