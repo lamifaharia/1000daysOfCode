@@ -65,3 +65,35 @@ const quotes = [
     }
 ];
 
+
+// ==========================
+// Generate Random Quote
+// ==========================
+
+function generateQuote() {
+
+    const randomIndex =
+        Math.floor(Math.random() * quotes.length);
+
+    const randomQuote = quotes[randomIndex];
+
+
+    // Update quote
+    quoteElement.textContent =
+        `"${randomQuote.text}"`;
+
+
+    // Update author
+    authorElement.textContent =
+        `— ${randomQuote.author}`;
+}
+
+
+// ==========================
+// Button Click
+// ==========================
+
+newQuoteBtn.addEventListener(
+    "click",
+    generateQuote
+);
