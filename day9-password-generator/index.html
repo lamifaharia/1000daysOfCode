@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🔐 Password Generator</h1>
+
+        <p class="subtitle">
+            Create a strong random password.
+        </p>
+
+
+        <!-- Password Display -->
+
+        <div class="password-box">
+
+            <input
+                type="text"
+                id="password"
+                placeholder="Your password will appear here"
+                readonly
+            >
+
+            <button id="copyBtn">
+                📋
+            </button>
+
+        </div>
+
+
+        <!-- Password Length -->
+
+        <div class="option">
+
+            <div class="option-header">
+
+                <label for="length">
+                    Password Length
+                </label>
+
+                <span id="lengthValue">
+                    12
+                </span>
+
+            </div>
+
+            <input
+                type="range"
+                id="length"
+                min="6"
+                max="30"
+                value="12"
+            >
+
+        </div>
+
+
+        <!-- Numbers -->
+
+        <div class="checkbox-option">
+
+            <input
+                type="checkbox"
+                id="numbers"
+                checked
+            >
+
+            <label for="numbers">
+                Include Numbers
+            </label>
+
+        </div>
+
+
+        <!-- Symbols -->
+
+        <div class="checkbox-option">
+
+            <input
+                type="checkbox"
+                id="symbols"
+                checked
+            >
+
+            <label for="symbols">
+                Include Special Characters
+            </label>
+
+        </div>
+
+
+        <!-- Generate Button -->
+
+        <button id="generateBtn">
+            🔄 Generate Password
+        </button>
+
+
+        <!-- Status -->
+
+        <p id="status">
+            Choose your options and generate a password.
+        </p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
