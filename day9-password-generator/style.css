@@ -1,0 +1,290 @@
+/* ===========================
+   Reset
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===========================
+   Body
+=========================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: linear-gradient(135deg, #0f172a, #334155);
+}
+
+
+/* ===========================
+   Container
+=========================== */
+
+.container {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 40px;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ===========================
+   Heading
+=========================== */
+
+h1 {
+    color: #111827;
+
+    font-size: 30px;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+
+.subtitle {
+    color: #6b7280;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+/* ===========================
+   Password Box
+=========================== */
+
+.password-box {
+    display: flex;
+
+    gap: 8px;
+
+    margin-bottom: 30px;
+}
+
+
+.password-box input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 14px;
+
+    border: 2px solid #d1d5db;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    color: #111827;
+
+    outline: none;
+}
+
+
+.password-box input:focus {
+    border-color: #4f46e5;
+}
+
+
+#copyBtn {
+    width: 50px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#copyBtn:hover {
+    background: #4338ca;
+}
+
+
+/* ===========================
+   Option
+=========================== */
+
+.option {
+    margin-bottom: 25px;
+}
+
+
+.option-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+
+.option-header label {
+    color: #374151;
+
+    font-weight: bold;
+}
+
+
+#lengthValue {
+    color: #4f46e5;
+
+    font-weight: bold;
+}
+
+
+/* ===========================
+   Range Slider
+=========================== */
+
+#length {
+    width: 100%;
+
+    cursor: pointer;
+}
+
+
+/* ===========================
+   Checkbox Options
+=========================== */
+
+.checkbox-option {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+.checkbox-option input {
+    width: 18px;
+
+    height: 18px;
+
+    cursor: pointer;
+
+    accent-color: #4f46e5;
+}
+
+
+.checkbox-option label {
+    color: #374151;
+
+    cursor: pointer;
+}
+
+
+/* ===========================
+   Generate Button
+=========================== */
+
+#generateBtn {
+    width: 100%;
+
+    border: none;
+
+    padding: 15px;
+
+    margin-top: 15px;
+
+    border-radius: 10px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#generateBtn:hover {
+    background: #4338ca;
+
+    transform: translateY(-2px);
+}
+
+
+#generateBtn:active {
+    transform: translateY(0);
+}
+
+
+/* ===========================
+   Status
+=========================== */
+
+#status {
+    margin-top: 20px;
+
+    color: #6b7280;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* ===========================
+   Mobile Responsive
+=========================== */
+
+@media (max-width: 500px) {
+
+    .container {
+        padding: 30px 20px;
+    }
+
+
+    h1 {
+        font-size: 26px;
+    }
+
+
+    .password-box input {
+        font-size: 14px;
+    }
+
+}
