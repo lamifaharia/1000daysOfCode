@@ -24,7 +24,7 @@ body {
 
     padding: 20px;
 
-    background: linear-gradient(135deg, #1e293b, #334155);
+    background: linear-gradient(135deg, #1e293b, #475569);
 }
 
 
@@ -71,7 +71,7 @@ h1 {
 
 
 /* ===========================
-   Password Box
+   Password Display
 =========================== */
 
 .password-box {
@@ -96,9 +96,9 @@ h1 {
 
     font-size: 16px;
 
-    color: #1e293b;
-
     outline: none;
+
+    color: #1e293b;
 }
 
 
@@ -132,7 +132,7 @@ h1 {
 
 
 /* ===========================
-   Option
+   Password Length
 =========================== */
 
 .option {
@@ -181,7 +181,7 @@ h1 {
 
 
 /* ===========================
-   Checkbox Options
+   Checkboxes
 =========================== */
 
 .checkbox-option {
@@ -272,7 +272,7 @@ h1 {
 
 
 /* ===========================
-   Mobile Responsive
+   Mobile
 =========================== */
 
 @media (max-width: 500px) {
