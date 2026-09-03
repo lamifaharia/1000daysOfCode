@@ -2,140 +2,75 @@
 // Select HTML Elements
 // ==========================
 
-const passwordElement = document.getElementById("password");
+const textInput = document.getElementById("textInput");
 
-const copyBtn = document.getElementById("copyBtn");
+const checkBtn = document.getElementById("checkBtn");
 
-const lengthInput = document.getElementById("length");
-
-const lengthValue = document.getElementById("lengthValue");
-
-const numbersCheckbox = document.getElementById("numbers");
-
-const symbolsCheckbox = document.getElementById("symbols");
-
-const generateBtn = document.getElementById("generateBtn");
-
-const statusMessage = document.getElementById("status");
+const result = document.getElementById("result");
 
 
 // ==========================
-// Character Sets
+// Check Palindrome
 // ==========================
 
-const lowercase =
-    "abcdefghijklmnopqrstuvwxyz";
+function checkPalindrome() {
 
-const uppercase =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-const numbers =
-    "0123456789";
-
-const symbols =
-    "!@#$%^&*()_+-=[]{}";
+    const text = textInput.value.trim();
 
 
-// ==========================
-// Update Length Display
-// ==========================
+    // Check if input is empty
+    if (text === "") {
 
-lengthInput.addEventListener("input", () => {
-
-    lengthValue.textContent = lengthInput.value;
-
-});
-
-
-// ==========================
-// Generate Password
-// ==========================
-
-function generatePassword() {
-
-    const length = Number(lengthInput.value);
-
-    let characters = lowercase + uppercase;
-
-
-    // Add numbers if selected
-    if (numbersCheckbox.checked) {
-
-        characters += numbers;
-
-    }
-
-
-    // Add symbols if selected
-    if (symbolsCheckbox.checked) {
-
-        characters += symbols;
-
-    }
-
-
-    // Create password
-    let password = "";
-
-
-    for (let i = 0; i < length; i++) {
-
-        const randomIndex =
-            Math.floor(Math.random() * characters.length);
-
-        password += characters[randomIndex];
-
-    }
-
-
-    // Display password
-    passwordElement.value = password;
-
-    statusMessage.textContent =
-        "Password generated successfully!";
-
-}
-
-
-// ==========================
-// Generate Button
-// ==========================
-
-generateBtn.addEventListener(
-    "click",
-    generatePassword
-);
-
-
-// ==========================
-// Copy Password
-// ==========================
-
-copyBtn.addEventListener("click", async () => {
-
-    const password = passwordElement.value;
-
-
-    if (password === "") {
-
-        statusMessage.textContent =
-            "Generate a password first.";
+        result.textContent = "Please enter a word or number.";
 
         return;
     }
 
 
-    try {
+    // Convert text to lowercase
+    const lowerText = text.toLowerCase();
 
-        await navigator.clipboard.writeText(password);
 
-        statusMessage.textContent =
-            "📋 Password copied to clipboard!";
+    // Reverse the text
+    const reversedText =
+        lowerText.split("").reverse().join("");
 
-    } catch (error) {
 
-        statusMessage.textContent =
-            "Unable to copy password.";
+    // Compare original and reversed text
+    if (lowerText === reversedText) {
+
+        result.textContent =
+            `"${text}" is a palindrome!`;
+
+    } else {
+
+        result.textContent =
+            `"${text}" is not a palindrome.`;
+
+    }
+
+}
+
+
+// ==========================
+// Check Button
+// ==========================
+
+checkBtn.addEventListener(
+    "click",
+    checkPalindrome
+);
+
+
+// ==========================
+// Enter Key
+// ==========================
+
+textInput.addEventListener("keydown", (event) => {
+
+    if (event.key === "Enter") {
+
+        checkPalindrome();
 
     }
 
