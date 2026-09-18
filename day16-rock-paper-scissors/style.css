@@ -1,0 +1,277 @@
+/* ===========================
+   Reset
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===========================
+   Body
+=========================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: linear-gradient(135deg, #0f172a, #475569);
+}
+
+
+/* ===========================
+   Container
+=========================== */
+
+.container {
+    width: 100%;
+    max-width: 550px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ===========================
+   Heading
+=========================== */
+
+h1 {
+    color: #1e293b;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+
+.subtitle {
+    color: #64748b;
+
+    line-height: 1.5;
+
+    margin-bottom: 30px;
+}
+
+
+/* ===========================
+   Choices
+=========================== */
+
+.choices {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+.choice {
+    width: 120px;
+
+    height: 110px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+    border: 2px solid #e2e8f0;
+
+    border-radius: 15px;
+
+    background: white;
+
+    color: #334155;
+
+    font-size: 35px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.choice span {
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.choice:hover {
+    border-color: #6366f1;
+
+    background: #f8fafc;
+
+    transform: translateY(-5px);
+}
+
+
+/* ===========================
+   Result Box
+=========================== */
+
+.result-box {
+    background: #f8fafc;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.result-box p {
+    color: #64748b;
+
+    font-size: 15px;
+
+    margin-bottom: 8px;
+}
+
+
+#result {
+    color: #6366f1;
+
+    font-size: 22px;
+
+    margin-top: 15px;
+}
+
+
+/* ===========================
+   Score
+=========================== */
+
+.score {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 60px;
+
+    margin-bottom: 25px;
+}
+
+
+.score div {
+    min-width: 80px;
+}
+
+
+.score span {
+    color: #1e293b;
+
+    font-size: 35px;
+
+    font-weight: bold;
+}
+
+
+.score p {
+    color: #64748b;
+
+    margin-top: 5px;
+}
+
+
+/* ===========================
+   Reset Button
+=========================== */
+
+#resetBtn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #e2e8f0;
+
+    color: #334155;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#resetBtn:hover {
+    background: #cbd5e1;
+
+    transform: translateY(-2px);
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 500px) {
+
+    .container {
+        padding: 30px 20px;
+    }
+
+
+    h1 {
+        font-size: 25px;
+    }
+
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+
+    .choices {
+        gap: 8px;
+    }
+
+
+    .choice {
+        width: 95px;
+
+        height: 95px;
+
+        font-size: 28px;
+    }
+
+
+    .score {
+        gap: 40px;
+    }
+
+}
