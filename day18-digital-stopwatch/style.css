@@ -1,0 +1,211 @@
+/* ===========================
+   Reset
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===========================
+   Body
+=========================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: linear-gradient(135deg, #0f172a, #334155);
+}
+
+
+/* ===========================
+   Container
+=========================== */
+
+.container {
+    width: 100%;
+    max-width: 500px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ===========================
+   Heading
+=========================== */
+
+h1 {
+    color: #1e293b;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+
+.subtitle {
+    color: #64748b;
+
+    line-height: 1.5;
+
+    margin-bottom: 30px;
+}
+
+
+/* ===========================
+   Stopwatch Display
+=========================== */
+
+.display {
+    background: #f8fafc;
+
+    border: 2px solid #e2e8f0;
+
+    border-radius: 15px;
+
+    padding: 25px 15px;
+
+    margin-bottom: 25px;
+
+    color: #1e293b;
+
+    font-size: 48px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+
+/* ===========================
+   Buttons
+=========================== */
+
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+}
+
+
+.buttons button {
+    flex: 1;
+
+    padding: 13px 10px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#startBtn {
+    background: #22c55e;
+
+    color: white;
+}
+
+
+#startBtn:hover {
+    background: #16a34a;
+
+    transform: translateY(-2px);
+}
+
+
+#pauseBtn {
+    background: #f59e0b;
+
+    color: white;
+}
+
+
+#pauseBtn:hover {
+    background: #d97706;
+
+    transform: translateY(-2px);
+}
+
+
+#resetBtn {
+    background: #e2e8f0;
+
+    color: #334155;
+}
+
+
+#resetBtn:hover {
+    background: #cbd5e1;
+
+    transform: translateY(-2px);
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 500px) {
+
+    .container {
+        padding: 30px 20px;
+    }
+
+
+    h1 {
+        font-size: 25px;
+    }
+
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+
+    .display {
+        font-size: 35px;
+
+        padding: 20px 10px;
+    }
+
+
+    .buttons {
+        gap: 8px;
+    }
+
+
+    .buttons button {
+        font-size: 14px;
+
+        padding: 12px 8px;
+    }
+
+}
