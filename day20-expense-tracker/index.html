@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Expense Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Expense Tracker</h1>
+
+        <p class="subtitle">
+            Track your expenses and manage your spending.
+        </p>
+
+
+        <!-- Total Expense -->
+        <div class="total-box">
+
+            <p>Total Expenses</p>
+
+            <h2 id="totalExpense">
+                $0.00
+            </h2>
+
+        </div>
+
+
+        <!-- Add Expense -->
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="expenseName"
+                placeholder="Expense name"
+            >
+
+            <input
+                type="number"
+                id="expenseAmount"
+                placeholder="Amount"
+            >
+
+            <button id="addBtn">
+                Add Expense
+            </button>
+
+        </div>
+
+
+        <!-- Expense List -->
+        <ul id="expenseList"></ul>
+
+
+        <!-- Clear All -->
+        <button id="clearBtn">
+            Clear All
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
