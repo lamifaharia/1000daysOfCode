@@ -1,0 +1,280 @@
+/* ===========================
+   Reset
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===========================
+   Body
+=========================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: linear-gradient(135deg, #0f766e, #14b8a6);
+}
+
+
+/* ===========================
+   Container
+=========================== */
+
+.container {
+    width: 100%;
+    max-width: 550px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ===========================
+   Heading
+=========================== */
+
+h1 {
+    color: #1e293b;
+
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+
+.subtitle {
+    color: #64748b;
+
+    text-align: center;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+
+
+/* ===========================
+   Total Box
+=========================== */
+
+.total-box {
+    background: #f0fdfa;
+
+    border: 2px solid #ccfbf1;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+.total-box p {
+    color: #64748b;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+
+#totalExpense {
+    color: #0f766e;
+
+    font-size: 32px;
+}
+
+
+/* ===========================
+   Input Area
+=========================== */
+
+.input-area {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+
+.input-area input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 2px solid #e2e8f0;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+
+.input-area input:focus {
+    border-color: #14b8a6;
+}
+
+
+#addBtn {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #0f766e;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#addBtn:hover {
+    background: #115e59;
+
+    transform: translateY(-2px);
+}
+
+
+/* ===========================
+   Expense List
+=========================== */
+
+#expenseList {
+    list-style: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+
+#expenseList li {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 14px 15px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 10px;
+}
+
+
+.expense-name {
+    color: #334155;
+
+    font-weight: bold;
+}
+
+
+.expense-amount {
+    color: #ef4444;
+
+    font-weight: bold;
+}
+
+
+/* ===========================
+   Clear Button
+=========================== */
+
+#clearBtn {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #e2e8f0;
+
+    color: #334155;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#clearBtn:hover {
+    background: #cbd5e1;
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 500px) {
+
+    .container {
+        padding: 25px 20px;
+    }
+
+
+    h1 {
+        font-size: 25px;
+    }
+
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+
+    #totalExpense {
+        font-size: 28px;
+    }
+
+}
