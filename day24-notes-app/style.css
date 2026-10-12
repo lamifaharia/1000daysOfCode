@@ -1,0 +1,154 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #fef3c7, #fce7f3);
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #1e293b;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #64748b;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Input area */
+.input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+#noteTitle,
+#noteContent {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+#noteTitle:focus,
+#noteContent:focus {
+    border-color: #d97706;
+}
+
+#noteContent {
+    resize: vertical;
+}
+
+#addBtn {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #d97706;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#addBtn:hover {
+    background: #b45309;
+    transform: translateY(-2px);
+}
+
+/* Notes grid */
+.notes-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+
+/* Individual note */
+.note-card {
+    padding: 20px;
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 12px;
+    overflow-wrap: anywhere;
+}
+
+.note-card h3 {
+    color: #92400e;
+    margin-bottom: 10px;
+}
+
+.note-card p {
+    color: #475569;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    margin-bottom: 15px;
+}
+
+.delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 7px;
+    background: #fee2e2;
+    color: #dc2626;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #fecaca;
+}
+
+/* Message */
+#message {
+    text-align: center;
+    color: #15803d;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .notes-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .container {
+        padding: 22px 16px;
+    }
+
+    .notes-container {
+        grid-template-columns: 1fr;
+    }
+}
