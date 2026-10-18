@@ -1,0 +1,128 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #0f766e, #164e63);
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 480px;
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #1e293b;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #64748b;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Input */
+#textInput {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    outline: none;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#textInput:focus {
+    border-color: #0d9488;
+}
+
+/* Generate button */
+#generateBtn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #0d9488;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#generateBtn:hover {
+    background: #0f766e;
+    transform: translateY(-2px);
+}
+
+/* Message */
+#message {
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* QR output */
+.qr-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.qr-container canvas,
+.qr-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Download link */
+.download-btn {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 10px;
+    background: #1e293b;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background: #334155;
+}
+
+.download-btn[hidden] {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .container {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
