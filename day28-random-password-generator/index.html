@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Random Password Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🔐 Password Generator</h1>
+
+        <p class="subtitle">
+            Create a strong and random password.
+        </p>
+
+        <!-- Generated password -->
+        <div class="password-box">
+            <input
+                type="text"
+                id="password"
+                placeholder="Your password will appear here"
+                readonly
+            >
+
+            <button id="copyBtn" type="button">
+                Copy
+            </button>
+        </div>
+
+        <!-- Password length -->
+        <div class="length-section">
+            <label for="length">
+                Password Length:
+                <span id="lengthValue">12</span>
+            </label>
+
+            <input
+                type="range"
+                id="length"
+                min="4"
+                max="32"
+                value="12"
+            >
+        </div>
+
+        <!-- Character options -->
+        <div class="options">
+
+            <label>
+                <input type="checkbox" id="uppercase" checked>
+                Include Uppercase (A-Z)
+            </label>
+
+            <label>
+                <input type="checkbox" id="lowercase" checked>
+                Include Lowercase (a-z)
+            </label>
+
+            <label>
+                <input type="checkbox" id="numbers" checked>
+                Include Numbers (0-9)
+            </label>
+
+            <label>
+                <input type="checkbox" id="symbols" checked>
+                Include Symbols (!@#$)
+            </label>
+
+        </div>
+
+        <!-- Generate button -->
+        <button id="generateBtn" type="button">
+            Generate Password
+        </button>
+
+        <!-- Feedback message -->
+        <p id="message" aria-live="polite"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
