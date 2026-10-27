@@ -1,0 +1,176 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #312e81, #7c3aed, #c026d3);
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 550px;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading */
+h1 {
+    color: #1e1b4b;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+/* Subtitle */
+.subtitle {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+/* Scoreboard */
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.score-card {
+    flex: 1;
+    padding: 18px;
+    background: #f5f3ff;
+    border: 2px solid #ddd6fe;
+    border-radius: 15px;
+}
+
+.score-card h3 {
+    color: #6d28d9;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.score-card p {
+    color: #1e1b4b;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Result box */
+.result-box {
+    padding: 20px;
+    margin-bottom: 25px;
+    background: #faf5ff;
+    border-radius: 15px;
+    border: 1px dashed #c4b5fd;
+}
+
+#result {
+    color: #5b21b6;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#choices {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Choice buttons */
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.choice-btn {
+    flex: 1;
+    min-width: 0;
+    padding: 18px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    border: 2px solid #ddd6fe;
+    border-radius: 15px;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.choice-btn span {
+    color: #475569;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.choice-btn:hover {
+    background: #f5f3ff;
+    border-color: #8b5cf6;
+    transform: translateY(-5px);
+}
+
+/* Reset button */
+#resetBtn {
+    width: 100%;
+    padding: 14px;
+    background: #4c1d95;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#resetBtn:hover {
+    background: #6d28d9;
+}
+
+/* Keyboard focus */
+button:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .container {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .choices {
+        gap: 8px;
+    }
+
+    .choice-btn {
+        padding: 15px 5px;
+        font-size: 29px;
+    }
+
+    .choice-btn span {
+        font-size: 12px;
+    }
+}
