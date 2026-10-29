@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Typing Speed Test</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>⌨️ Typing Speed Test</h1>
+
+        <p class="subtitle">
+            Test your typing speed and accuracy!
+        </p>
+
+        <!-- Test statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <span>Time</span>
+                <p id="timer">60s</p>
+            </div>
+
+            <div class="stat-card">
+                <span>WPM</span>
+                <p id="wpm">0</p>
+            </div>
+
+            <div class="stat-card">
+                <span>Accuracy</span>
+                <p id="accuracy">100%</p>
+            </div>
+
+        </section>
+
+        <!-- Text to type -->
+        <div id="textDisplay" class="text-display">
+            The quick brown fox jumps over the lazy dog.
+            Practice makes progress, so keep learning every day.
+        </div>
+
+        <!-- Typing input -->
+        <textarea
+            id="textInput"
+            placeholder="Start typing the text above..."
+            rows="4"
+            disabled
+        ></textarea>
+
+        <!-- Feedback -->
+        <p id="message" aria-live="polite">
+            Click Start Test to begin.
+        </p>
+
+        <!-- Controls -->
+        <div class="controls">
+
+            <button id="startBtn" type="button">
+                Start Test
+            </button>
+
+            <button id="resetBtn" type="button">
+                Reset Test
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
