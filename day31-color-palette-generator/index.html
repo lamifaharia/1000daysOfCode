@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Color Palette Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>🎨 Color Palette Generator</h1>
+
+        <p class="subtitle">
+            Generate beautiful random color combinations.
+        </p>
+
+        <!-- Color palette -->
+        <div class="palette" id="palette">
+
+            <div class="color-card">
+                <div class="color-box" style="background: #FF6B6B;"></div>
+                <p class="color-code">#FF6B6B</p>
+            </div>
+
+            <div class="color-card">
+                <div class="color-box" style="background: #4ECDC4;"></div>
+                <p class="color-code">#4ECDC4</p>
+            </div>
+
+            <div class="color-card">
+                <div class="color-box" style="background: #FFE66D;"></div>
+                <p class="color-code">#FFE66D</p>
+            </div>
+
+            <div class="color-card">
+                <div class="color-box" style="background: #6C63FF;"></div>
+                <p class="color-code">#6C63FF</p>
+            </div>
+
+            <div class="color-card">
+                <div class="color-box" style="background: #FF8E72;"></div>
+                <p class="color-code">#FF8E72</p>
+            </div>
+
+        </div>
+
+        <!-- Generate button -->
+        <button id="generateBtn" type="button">
+            Generate New Palette
+        </button>
+
+        <!-- Feedback -->
+        <p id="message" aria-live="polite">
+            Click a color code to copy it!
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
