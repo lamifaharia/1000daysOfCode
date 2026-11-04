@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gradient Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>🌈 Gradient Generator</h1>
+
+        <p class="subtitle">
+            Create beautiful CSS gradients with ease.
+        </p>
+
+        <!-- Gradient preview -->
+        <div class="gradient-preview" id="gradientPreview"></div>
+
+        <!-- Color controls -->
+        <div class="color-controls">
+
+            <div class="color-input">
+                <label for="colorOne">First Color</label>
+                <input type="color" id="colorOne" value="#6C63FF">
+            </div>
+
+            <div class="color-input">
+                <label for="colorTwo">Second Color</label>
+                <input type="color" id="colorTwo" value="#FF6B6B">
+            </div>
+
+        </div>
+
+        <!-- Direction selection -->
+        <div class="direction-control">
+
+            <label for="direction">Gradient Direction</label>
+
+            <select id="direction">
+                <option value="to right">Left to Right</option>
+                <option value="to left">Right to Left</option>
+                <option value="to bottom">Top to Bottom</option>
+                <option value="to top">Bottom to Top</option>
+                <option value="to bottom right">Diagonal</option>
+            </select>
+
+        </div>
+
+        <!-- CSS output -->
+        <div class="output-section">
+
+            <h2>CSS Code</h2>
+
+            <div class="code-box">
+                <code id="cssCode">
+                    background: linear-gradient(to right, #6C63FF, #FF6B6B);
+                </code>
+
+                <button id="copyBtn" type="button">
+                    Copy CSS
+                </button>
+            </div>
+
+        </div>
+
+        <p id="message" aria-live="polite"></p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
