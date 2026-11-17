@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Text Case Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>🔠 Text Case Converter</h1>
+
+        <p class="subtitle">
+            Convert your text into different letter cases instantly.
+        </p>
+
+        <!-- Text input -->
+        <div class="input-section">
+
+            <label for="textInput">Enter Your Text</label>
+
+            <textarea
+                id="textInput"
+                rows="7"
+                placeholder="Type or paste your text here..."
+            ></textarea>
+
+        </div>
+
+        <!-- Conversion buttons -->
+        <div class="buttons">
+
+            <button id="upperBtn" type="button">
+                UPPERCASE
+            </button>
+
+            <button id="lowerBtn" type="button">
+                lowercase
+            </button>
+
+            <button id="titleBtn" type="button">
+                Title Case
+            </button>
+
+            <button id="sentenceBtn" type="button">
+                Sentence case
+            </button>
+
+            <button id="clearBtn" type="button">
+                Clear Text
+            </button>
+
+        </div>
+
+        <!-- Output section -->
+        <div class="output-section">
+
+            <div class="output-header">
+                <h2>Converted Text</h2>
+
+                <button id="copyBtn" type="button">
+                    Copy Text
+                </button>
+            </div>
+
+            <div id="output" aria-live="polite">
+                Your converted text will appear here...
+            </div>
+
+        </div>
+
+        <!-- Character count -->
+        <div class="counter">
+            <p>
+                Characters: <span id="charCount">0</span>
+            </p>
+
+            <p>
+                Words: <span id="wordCount">0</span>
+            </p>
+        </div>
+
+        <!-- Feedback -->
+        <p id="message" aria-live="polite"></p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
