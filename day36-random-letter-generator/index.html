@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Random Letter Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>🔤 Random Letter Generator</h1>
+
+        <p class="subtitle">
+            Generate a random letter from the English alphabet!
+        </p>
+
+        <!-- Letter display -->
+        <div class="letter-display" id="letterDisplay">
+            A
+        </div>
+
+        <!-- Letter information -->
+        <h2 id="letterName">Your Random Letter</h2>
+
+        <!-- Letter type selection -->
+        <div class="options">
+
+            <label for="letterType">Choose Letter Type</label>
+
+            <select id="letterType">
+                <option value="all">All Letters (A-Z)</option>
+                <option value="uppercase">Uppercase (A-Z)</option>
+                <option value="lowercase">Lowercase (a-z)</option>
+                <option value="vowels">Vowels (A, E, I, O, U)</option>
+                <option value="consonants">Consonants</option>
+            </select>
+
+        </div>
+
+        <!-- Action buttons -->
+        <button id="generateBtn" type="button">
+            Generate Random Letter
+        </button>
+
+        <button id="copyBtn" type="button">
+            Copy Letter
+        </button>
+
+        <!-- Feedback -->
+        <p id="message" aria-live="polite">
+            Let's generate a letter!
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
