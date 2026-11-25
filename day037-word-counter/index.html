@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Word Counter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>📝 Word Counter</h1>
+
+        <p class="subtitle">
+            Count words, characters, sentences, and paragraphs instantly.
+        </p>
+
+        <!-- Text input -->
+        <div class="input-section">
+
+            <label for="textInput">Enter Your Text</label>
+
+            <textarea
+                id="textInput"
+                rows="8"
+                placeholder="Start typing or paste your text here..."
+            ></textarea>
+
+        </div>
+
+        <!-- Statistics -->
+        <div class="stats-container">
+
+            <div class="stat-card">
+                <h2 id="wordCount">0</h2>
+                <p>Words</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="charCount">0</h2>
+                <p>Characters</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="charNoSpaceCount">0</h2>
+                <p>Without Spaces</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="sentenceCount">0</h2>
+                <p>Sentences</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="paragraphCount">0</h2>
+                <p>Paragraphs</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="readingTime">0 min</h2>
+                <p>Reading Time</p>
+            </div>
+
+        </div>
+
+        <!-- Action buttons -->
+        <div class="buttons">
+
+            <button id="copyBtn" type="button">
+                Copy Text
+            </button>
+
+            <button id="clearBtn" type="button">
+                Clear Text
+            </button>
+
+        </div>
+
+        <!-- Feedback -->
+        <p id="message" aria-live="polite"></p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
